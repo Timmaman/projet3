@@ -1,0 +1,147 @@
+body
+{
+	color: #F9CA47;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	width: 100%;
+}
+header
+{
+	width: 100%;
+	background-color: #579C87;
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+section
+{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+button
+{
+	display: block;
+	margin: auto;
+	display: flex;
+	align-items:flex-end;
+	background-color: #579C87;
+	color: #F9CA47;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 3%;
+	overflow: hidden;
+}
+}
+footer
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #579C87;
+	display: flex;
+	justify-content: space-between;
+}
+footer a
+{
+	padding-top:30px;
+	padding-bottom: 30px;
+	padding-right: 40px;
+	padding-left: 40px;
+	text-decoration: none;
+	color: #F9CA47;
+}
+.foot:hover
+{
+	animation: wiggle 0.2s ease-in-out 0.2s infinite alternate;
+}
+
+@keyframes wiggle
+{
+	from 
+	{
+    	transform: rotate(10deg);
+  	}
+  	to 
+  	{
+    	transform: rotate(-10deg);
+    }
+}
+ #logo
+{
+	width: 50%;
+}
+.menu
+{
+	border: 5px solid #F1F1F1;
+	width:40%;
+	overflow: hidden;
+}
+.align img
+{
+	transition: transform 0.5s 0.2s, opacity 0.3s;
+	width: 100%;
+	padding: 0;
+}
+.align img:hover
+{
+	transform: scale(1.3);
+	opacity: 60%;
+}
+.align
+{
+	display: flex;
+	justify-content: space-around;
+	margin-left:5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+#points
+{
+	font-size: 1.5em;
+	display: flex;
+	padding: 0;
+}
+.point1
+{
+  	animation: point1 1.5s infinite;
+  	padding-left: 5px;
+}
+@keyframes point1 
+{
+  	0% {opacity: 1;}
+  	50% {opacity: 66%;}
+  	100% {opacity: 33%;}
+ }
+ .point2
+{
+  	animation: point2 1.5s infinite;
+}
+@keyframes point2 
+{
+  	0% {opacity: 66%;}
+  	50% {opacity: 1;}
+  	100% {opacity: 66%;}
+}
+.point3
+{
+  	animation: point3 1.5s infinite;
+}
+@keyframes point3
+{
+  	0% {opacity: 33%;}
+  	50% {opacity: 66%;}
+  	100% {opacity: 1;}
+}
