@@ -463,6 +463,7 @@ p
 	#menu
 	{
 		margin-top: 10%;
+		margin-bottom: 20%;
 	}
 	.menu
 	{
@@ -514,11 +515,15 @@ p
 	{
 		font-size: 500%;
 	}
+	.bottom a
+	{
+		font-size: 170%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 	.pagemenu>.bottom a
 	{
-		font-size: 150%;
-			margin-right: 5%;
-		margin-left: 5%;
+		font-size: 200%;
 	}
 }
 @media screen and (max-device-width:700px)
@@ -527,8 +532,12 @@ p
 	{
 		font-size: 110%;
 	}
+	.bottom a
+	{
+		font-size: 110%;
+	}
 	.pagemenu>.bottom a
 	{
-		font-size: 200%;
+		font-size: 250%;
 	}
 }
