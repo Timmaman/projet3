@@ -1,4 +1,9 @@
 /* Tous*/
+:root
+{
+	--couleur-texte:#F9CA47;
+	--couleur-fond:#579C87;
+}
 body
 {
 	margin:0;
@@ -16,9 +21,8 @@ h1
 }
 .top
 {
-	color: #F9CA47;
 	width: 100%;
-	background-color: #579C87;
+	background-color: var(--couleur-fond);
 	text-align:center;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -28,17 +32,16 @@ h1
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: #579C87;
+	background-color: var(--couleur-fond);
 	display: flex;
 	justify-content: space-between;
-	color: #F9CA47;
 }
 .bottom a
 {
 	margin: 3%;
 	text-decoration: none;
 	font-size: 200%;
-	color: #F9CA47;
+	color: var(--couleur-texte);
 }
 .foot:hover
 {
@@ -66,8 +69,8 @@ button
 	margin: auto;
 	display: flex;
 	align-items:flex-end;
-	background-color: #579C87;
-	color: #F9CA47;
+	background-color: var(--couleur-fond);
+	color: var(--couleur-texte);
 	border: none;
 	border-radius: 10px;
 	font-size: 250%;
@@ -84,7 +87,6 @@ button
 	justify-content: space-around;
 	margin-top: 5%;
 	margin-bottom: 12%;
-
 }
 .menu
 {
@@ -153,6 +155,11 @@ button
 }
 
 /*Toutes les pages menus */
+:root
+{
+	--largeur:23%;
+	--hauteur:5px;
+}
 header
 {
 	text-align: center;
@@ -187,11 +194,11 @@ p
 .underline
 {
 	text-align: center;
-	font-size:160%;
-	padding-top: 30px;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-bottom: 30px;
+	font-size:140%;
+	margin-top: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 50px;
 	background: linear-gradient(to top, black 5px, transparent 3px) no-repeat;
   	background-size: 0 100%;
   	transition: background-size 0.3s;
@@ -234,7 +241,7 @@ p
 {
 	width: 12%;
 }
-.entete1
+.entete1,.entete3_1, .entete3_2, .entete3_3, .entete4
 {
   	display:flex;
   	justify-content:space-between;
@@ -242,14 +249,13 @@ p
 }
 .entete1:before,.entete1:after
 {
-  height:5px;
-  width: 30%; 
+  height:var(--hauteur);
+  width: var(--largeur); 
   background: black;
   content:""
 }
 .footermenu1
 {
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -292,8 +298,8 @@ p
 }
 .entete2:before,.entete2:after
 {
-  height:5px;
-  width: 20%; 
+  height:var(--hauteur);
+  width: var(--largeur); 
   content:""
 }
 
@@ -384,42 +390,28 @@ p
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
 }
-.entete3_1
-{
-  	display:flex;
-  	justify-content:space-between;
-  	align-items: center;
-}
+
 .entete3_1:before,.entete3_1:after
 {
-  height:5px;
-  width: 20%; 
+  height:var(--hauteur);
+  width: var(--largeur); 
   background: #153EDE;
   content:""
 }
-.entete3_2
-{
-  	display:flex;
-  	justify-content:space-between;
-  	align-items: center;
-}
+
+
 .entete3_2:before,.entete3_2:after
 {
-  height:5px;
-  width: 20%; 
+  height:var(--hauteur);
+  width: var(--largeur); 
   background: #0870F3;
   content:""
 }
-.entete3_3
-{
-  	display:flex;
-  	justify-content:space-between;
-  	align-items: center;
-}
+
 .entete3_3:before,.entete3_3:after
 {
-  height:5px;
-  width: 20%; 
+   height:var(--hauteur);
+  width: var(--largeur); 
   background: #359DF7;
   content:""
 }
@@ -438,16 +430,11 @@ p
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
 }
-.entete4
-{
-  	display:flex;
-  	justify-content:space-between;
-  	align-items: center;
-}
+
 .entete4:before,.entete4::after
 {
-  height:5px;
-  width: 27%; 
+  height:var(--hauteur);
+  width: var(--largeur);  
   content:""
 }
 .entete4::before
@@ -488,43 +475,60 @@ p
 		margin-top: 0;
 		font-size: 170%;
 	}
-	.bottom a
-	{
-		font-size: 170%;
-		margin:2%;
-	}
 	.foot
 	{
 		padding: 0;
 	}
 
 	/*Pages Menu*/
-
-	.underline
+	:root
 	{
-		font-size: 120%;
+		--largeur:25%;
+		--hauteur:3px;
 	}
 	.txt
 	{
 		margin-right: 2%;
 	}
+	.platsmenu
+	{
+		font-size: 150%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	#platsmenu2
+	{
+		font-size: 120%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 	.entete2>.underline
 	{
-		font-size: 105%;
+		font-size: 120%;
+	}
+	.description
+	{
+		font-size: 110%;
 	}
 	#menu3>.titremenu
 	{
 		font-size: 500%;
 	}
+	.pagemenu>.bottom a
+	{
+		font-size: 150%;
+			margin-right: 5%;
+		margin-left: 5%;
+	}
 }
 @media screen and (max-device-width:700px)
 {
-	.bottom a 
-	{
-		font-size: 110%;
-	}
 	button
 	{
 		font-size: 110%;
+	}
+	.pagemenu>.bottom a
+	{
+		font-size: 200%;
 	}
 }
