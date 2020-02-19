@@ -63,7 +63,7 @@ h1
 
 /* Page d'accueil*/
 
-button
+aside
 {
 	display: block;
 	margin: auto;
@@ -130,7 +130,7 @@ button
 @keyframes point1 
 {
   	0% {opacity: 1;}
-  	50% {opacity: 50%%;}
+  	50% {opacity: 50%;}
   	100% {opacity: 25%;}
  }
  .point2
@@ -447,7 +447,7 @@ p
 }
 
 
-@media screen and (max-device-width:1030px)
+@media screen and (max-width:1030px)
 {
 	/* Page index */
 	#logo
@@ -471,7 +471,7 @@ p
 		margin-bottom: 10%;
 	}
 
-	button
+	aside
 	{
 		margin-top: 0;
 		font-size: 170%;
@@ -526,9 +526,9 @@ p
 		font-size: 200%;
 	}
 }
-@media screen and (max-device-width:700px)
+@media screen and (max-width:700px)
 {
-	button
+	aside
 	{
 		font-size: 110%;
 	}
