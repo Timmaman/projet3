@@ -9,6 +9,7 @@ h1
 	margin:0;
 	font-size: 1em;
 }
+
 #logo
 {
 	width: 30%;
@@ -31,15 +32,12 @@ h1
 	display: flex;
 	justify-content: space-between;
 	color: #F9CA47;
-	font-size: 200%;
 }
 .bottom a
 {
-	padding-top:30px;
-	padding-bottom: 30px;
-	padding-right: 40px;
-	padding-left: 40px;
+	margin: 3%;
 	text-decoration: none;
+	font-size: 200%;
 	color: #F9CA47;
 }
 .foot:hover
@@ -73,9 +71,9 @@ button
 	border: none;
 	border-radius: 10px;
 	font-size: 250%;
-	padding-bottom: 30px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
 	margin-top: 3%;
 }
 #menu
@@ -84,8 +82,9 @@ button
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 50px;
-	margin-bottom: 15%;
+	margin-top: 5%;
+	margin-bottom: 12%;
+
 }
 .menu
 {
@@ -108,10 +107,11 @@ button
 {
 	display: flex;
 	justify-content: space-around;
-	margin-left:5%;
-	margin-right: 5%;
+	padding-left:5%;
+	padding-right: 5%;
 	margin-bottom: 2%;
 	margin-top: 2%;
+	width: 90%;
 }
 
 #points
@@ -156,7 +156,6 @@ button
 header
 {
 	text-align: center;
-	font-size: 300%;
 }
 article
 {
@@ -178,11 +177,17 @@ p
 	font-weight:bold;
 	margin-top: 80px;
 	margin-bottom: 30px;
+	font-size: 300%;
+}
+.titremenu
+{
+	margin-bottom: 50px;
+	margin-top: 30px;
 }
 .underline
 {
 	text-align: center;
-	font-size:170%;
+	font-size:160%;
 	padding-top: 30px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -195,11 +200,20 @@ p
 {
 	background-size: 100% 100%;
 }
+.platsmenu
+{
+	font-size: 190%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: bold;
+	margin-bottom: 70px;
+	font-family: "Farsan", cursive;
+}
 .description
 {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 .txt
 {
@@ -211,15 +225,14 @@ p
 {
 	background-color:#FCDFDB;
 }
-.titremenu1
+#menu1>.titremenu p
 {
-	margin-bottom: 50px;
-	font-family: "Kaushan Script", cursive;
-	font-size: 350%;
+	font-family: "Devonshire";
+	font-size: 500%;
 }
-.titremenu1 img
+.titremenu img
 {
-	width: 10%;
+	width: 12%;
 }
 .entete1
 {
@@ -234,66 +247,63 @@ p
   background: black;
   content:""
 }
-.platsmenu1
-{
-	font-family: "Farsan", cursive;
-	font-size: 190%;
-	padding-left: 10%;
-	padding-right: 10%;
-	font-weight: bold;
-	margin-bottom: 70px;
-}
-
 .footermenu1
 {
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Kaushan Script", cursive;
-	font-size: 300%;
+	font-family: "Devonshire";
+	font-size: 400%;
 	margin-bottom: 70px;
 }
 .footermenu1 img
 {
 	width: 5%;
+	margin:10px;
 }
+
 
 /* Menu 2*/
 
 #menu2
 {
 	background-color:#FFF5FE;
+	padding-bottom: 200px;
 }
 
-.titremenu2
+#menu2 >.titremenu
 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	font-family: "Kaushan Script", cursive;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-family: "Croissant One";
 	font-size: 350%;
+	background:-webkit-linear-gradient(bottom right, #C67412, #A56799,#6E4CCC);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
 }
 .entete2
 {
   	display:flex;
   	justify-content:space-between;
   	align-items: center;
+  	margin-bottom: 20px;
+  	margin-top: 70px;
 }
 .entete2:before,.entete2:after
 {
   height:5px;
-  width: 22%; 
+  width: 20%; 
   content:""
 }
 
 #platsmenu2
 {
-	font-family: "Farsan", cursive;
-	font-size: 190%;
+	font-family: "noto serif";
+	font-size: 150%;
 	padding-left: 10%;
 	padding-right: 10%;
-	font-weight: bold;
-	margin-bottom: 70px;
+	margin-bottom: 150px;
 }
 #entrees2
 {
@@ -304,6 +314,7 @@ p
 	background: linear-gradient(to top, #C67412 5px, transparent 3px) no-repeat;
 	background-size: 0 100%;
   	transition: background-size 0.3s;
+
 }
 #entrees2 h1:hover
 {
@@ -356,19 +367,164 @@ p
   background:#6E4CCC;
 }
 
-@media screen and (max-device-width:1030px)
+
+/* Menu 3*/
+#menu3
 {
-	.entete1:before,.entete1:after
-	{
-	  height:5px;
-	  width: 25%; 
-	  background: black;
-	  content:""
-	}
-	.platsmenu1
-	{
-		font-size: 150%;
-	}
+	background-color: #EDEFEF;
+	padding-bottom: 200px;
+}
+#menu3 >.titremenu
+{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-family: "Great Vibes";
+	font-size: 700%;
+	background:-webkit-linear-gradient(left,#153EDE , #0870F3,#359DF7);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+.entete3_1
+{
+  	display:flex;
+  	justify-content:space-between;
+  	align-items: center;
+}
+.entete3_1:before,.entete3_1:after
+{
+  height:5px;
+  width: 20%; 
+  background: #153EDE;
+  content:""
+}
+.entete3_2
+{
+  	display:flex;
+  	justify-content:space-between;
+  	align-items: center;
+}
+.entete3_2:before,.entete3_2:after
+{
+  height:5px;
+  width: 20%; 
+  background: #0870F3;
+  content:""
+}
+.entete3_3
+{
+  	display:flex;
+  	justify-content:space-between;
+  	align-items: center;
+}
+.entete3_3:before,.entete3_3:after
+{
+  height:5px;
+  width: 20%; 
+  background: #359DF7;
+  content:""
+}
+
+/* Menu 4 */
+#menu4
+{
+	background-color: #FDFFFD;
+}
+#menu4 >.titremenu
+{
+	font-family: "Kaushan script";
+	font-size: 500%;
+	margin:50px;
+	background:-webkit-linear-gradient(left,#45993E , #C5F791);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+.entete4
+{
+  	display:flex;
+  	justify-content:space-between;
+  	align-items: center;
+}
+.entete4:before,.entete4::after
+{
+  height:5px;
+  width: 27%; 
+  content:""
+}
+.entete4::before
+{
+	background: -webkit-linear-gradient(left,#45993E , #C5F791);
+}
+.entete4::after
+{
+  background: -webkit-linear-gradient(right,#45993E , #C5F791);
 }
 
 
+@media screen and (max-device-width:1030px)
+{
+	/* Page index */
+	#logo
+	{
+		width: 50%;
+	}
+	.align
+	{
+		flex-direction: column;
+		align-items: center;
+		margin:auto;
+	}
+	#menu
+	{
+		margin-top: 10%;
+	}
+	.menu
+	{
+		width: 90%;
+		margin-bottom: 10%;
+	}
+
+	button
+	{
+		margin-top: 0;
+		font-size: 170%;
+	}
+	.bottom a
+	{
+		font-size: 170%;
+		margin:2%;
+	}
+	.foot
+	{
+		padding: 0;
+	}
+
+	/*Pages Menu*/
+
+	.underline
+	{
+		font-size: 120%;
+	}
+	.txt
+	{
+		margin-right: 2%;
+	}
+	.entete2>.underline
+	{
+		font-size: 105%;
+	}
+	#menu3>.titremenu
+	{
+		font-size: 500%;
+	}
+}
+@media screen and (max-device-width:700px)
+{
+	.bottom a 
+	{
+		font-size: 110%;
+	}
+	button
+	{
+		font-size: 110%;
+	}
+}
