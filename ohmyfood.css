@@ -3,11 +3,15 @@
 {
 	--couleur-texte:#F9CA47;
 	--couleur-fond:#579C87;
+	--largeur:30%;
+	--hauteur:5px;
+	--bas:100px;
 }
 body
 {
 	margin:0;
 	font-family: sans-serif;
+	font-size: 24px;
 }
 h1
 {
@@ -18,14 +22,14 @@ h1
 #logo
 {
 	width: 30%;
+	margin:0;
 }
 .top
 {
 	width: 100%;
 	background-color: var(--couleur-fond);
 	text-align:center;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 30px 0;
 }
 .bottom
 {
@@ -38,9 +42,9 @@ h1
 }
 .bottom a
 {
-	margin: 3%;
+	margin: 2% 5%;
 	text-decoration: none;
-	font-size: 200%;
+	font-size: 1em;
 	color: var(--couleur-texte);
 }
 .foot:hover
@@ -73,10 +77,8 @@ aside
 	color: var(--couleur-texte);
 	border: none;
 	border-radius: 10px;
-	font-size: 250%;
-	padding-bottom: 2%;
-	padding-left: 3%;
-	padding-right: 3%;
+	font-size: 1.5em;
+	padding:0 3% 2%;
 	margin-top: 3%;
 }
 #menu
@@ -85,8 +87,7 @@ aside
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 5%;
-	margin-bottom: 12%;
+	margin: 5% 0 12%;
 }
 .menu
 {
@@ -103,63 +104,56 @@ aside
 .align img:hover
 {
 	transform: scale(1.3);
-	opacity: 60%;
+	opacity: 0.6;
 }
 .align
 {
 	display: flex;
 	justify-content: space-around;
-	padding-left:5%;
-	padding-right: 5%;
-	margin-bottom: 2%;
-	margin-top: 2%;
+	padding:0 5%;
+	margin: 2% 0;
 	width: 90%;
 }
 
 #points
 {
-	font-size: 150%;
+	font-size: 1.5em;
 	display: flex;
 	padding: 0;
 }
-.point1
+.point_deux
 {
-  	animation: point1 1.5s infinite;
+  	animation: point_un 1.5s infinite;
   	padding-left: 5px;
 }
-@keyframes point1 
+@keyframes point_un 
 {
   	0% {opacity: 1;}
-  	50% {opacity: 50%;}
-  	100% {opacity: 25%;}
+  	50% {opacity: 0.5;}
+  	100% {opacity: 0.25;}
  }
- .point2
+ .point_deux
 {
-  	animation: point2 1.5s infinite;
+  	animation: point_deux 1.5s infinite;
 }
-@keyframes point2 
+@keyframes point_deux
 {
-  	0% {opacity: 50%;}
+  	0% {opacity: 0.5;}
   	50% {opacity: 1;}
-  	100% {opacity: 50%;}
+  	100% {opacity: 0.5;}
 }
-.point3
+.point_trois
 {
-  	animation: point3 1.5s infinite;
+  	animation: point_trois 1.5s infinite;
 }
-@keyframes point3
+@keyframes point_trois
 {
-  	0% {opacity: 25%;}
-  	50% {opacity: 50%;}
+  	0% {opacity: 0.25;}
+  	50% {opacity: 0.5;}
   	100% {opacity: 1;}
 }
 
 /*Toutes les pages menus */
-:root
-{
-	--largeur:23%;
-	--hauteur:5px;
-}
 header
 {
 	text-align: center;
@@ -168,10 +162,7 @@ article
 {
 	border: 5px solid #F1F1F1;
 	width: 70%;
-	margin-left:auto;
-	margin-right: auto;
-	margin-bottom: 20%;
-	margin-top: 0;
+	margin:0 auto 20%;
 	padding: 50px;
 }
 p
@@ -182,23 +173,19 @@ p
 {
 	text-align: center;
 	font-weight:bold;
-	margin-top: 80px;
-	margin-bottom: 30px;
-	font-size: 300%;
+	margin: 80px 0 30px;
+	font-size: 2em;
 }
 .titremenu
 {
-	margin-bottom: 50px;
-	margin-top: 30px;
+	margin: 60px 0;
 }
 .underline
 {
 	text-align: center;
-	font-size:140%;
-	margin-top: 50px;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 50px;
+	font-size:1.5em;
+	margin: 50px 0;
+	padding: 0 5px;
 	background: linear-gradient(to top, black 5px, transparent 3px) no-repeat;
   	background-size: 0 100%;
   	transition: background-size 0.3s;
@@ -209,9 +196,8 @@ p
 }
 .platsmenu
 {
-	font-size: 190%;
-	padding-left: 10%;
-	padding-right: 10%;
+	font-size: 1.2em;
+	padding:0 10%;
 	font-weight: bold;
 	margin-bottom: 70px;
 	font-family: "Farsan", cursive;
@@ -231,15 +217,16 @@ p
 #menu1
 {
 	background-color:#FCDFDB;
+	padding-bottom: var(--bas);
 }
 #menu1>.titremenu p
 {
 	font-family: "Devonshire";
-	font-size: 500%;
+	font-size: 3em;
 }
 .titremenu img
 {
-	width: 12%;
+	width: 10%;
 }
 .entete1,.entete3_1, .entete3_2, .entete3_3, .entete4
 {
@@ -247,7 +234,7 @@ p
   	justify-content:space-between;
   	align-items: center;
 }
-.entete1:before,.entete1:after
+.entete1::before,.entete1::after
 {
   height:var(--hauteur);
   width: var(--largeur); 
@@ -260,7 +247,7 @@ p
 	justify-content: center;
 	align-items: center;
 	font-family: "Devonshire";
-	font-size: 400%;
+	font-size: 2em;
 	margin-bottom: 70px;
 }
 .footermenu1 img
@@ -275,40 +262,38 @@ p
 #menu2
 {
 	background-color:#FFF5FE;
-	padding-bottom: 200px;
+	padding-bottom: var(--bas);
 }
 
 #menu2 >.titremenu
 {
-	margin-top: 80px;
-	margin-bottom: 80px;
 	font-family: "Croissant One";
-	font-size: 350%;
+	font-size: 2em;
 	background:-webkit-linear-gradient(bottom right, #C67412, #A56799,#6E4CCC);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+	background: linear-gradient(bottom right, #C67412, #A56799,#6E4CCC);
 }
 .entete2
 {
   	display:flex;
   	justify-content:space-between;
   	align-items: center;
-  	margin-bottom: 20px;
-  	margin-top: 70px;
+  	margin:50px 0 20px;
+  	font-size: 1em;
 }
 .entete2:before,.entete2:after
 {
   height:var(--hauteur);
-  width: var(--largeur); 
+  width: 23%; 
   content:""
 }
 
 #platsmenu2
 {
 	font-family: "noto serif";
-	font-size: 150%;
-	padding-left: 10%;
-	padding-right: 10%;
+	font-size: 0.9em;
+	padding:0 10%;
 	margin-bottom: 150px;
 }
 #entrees2
@@ -378,17 +363,16 @@ p
 #menu3
 {
 	background-color: #EDEFEF;
-	padding-bottom: 200px;
+	padding-bottom: var(--bas);
 }
 #menu3 >.titremenu
 {
-	margin-top: 100px;
-	margin-bottom: 100px;
 	font-family: "Great Vibes";
-	font-size: 700%;
+	font-size: 5em;
 	background:-webkit-linear-gradient(left,#153EDE , #0870F3,#359DF7);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+	background: linear-gradient(left,#153EDE , #0870F3,#359DF7);
 }
 
 .entete3_1:before,.entete3_1:after
@@ -420,39 +404,93 @@ p
 #menu4
 {
 	background-color: #FDFFFD;
+	padding-bottom: var(--bas);
 }
 #menu4 >.titremenu
 {
 	font-family: "Kaushan script";
-	font-size: 500%;
-	margin:50px;
+	font-size: 3em;
 	background:-webkit-linear-gradient(left,#45993E , #C5F791);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+	background: linear-gradient(left,#45993E , #C5F791);
 }
 
-.entete4:before,.entete4::after
+.entete4:before,.entete4:after
 {
   height:var(--hauteur);
   width: var(--largeur);  
   content:""
 }
-.entete4::before
+.entete4:before
 {
 	background: -webkit-linear-gradient(left,#45993E , #C5F791);
+	background: linear-gradient(left,#45993E , #C5F791);
 }
-.entete4::after
+.entete4:after
 {
   background: -webkit-linear-gradient(right,#45993E , #C5F791);
+  background: linear-gradient(left,#45993E , #C5F791);
 }
 
-
-@media screen and (max-width:1030px)
+@media screen and (max-width: 1030px)
 {
-	/* Page index */
+	:root
+	{
+		--largeur:25%;
+		--hauteur:3px;
+		--bas:100px;
+	}
+	body
+	{
+		font-size: 16px;
+	}
 	#logo
 	{
-		width: 50%;
+		width: 45%;
+	}
+	.platsmenu
+	{
+		margin-bottom: 0;
+		font-size: 1.5em;
+	}
+	.underline
+	{
+		font-size: 1.25em;
+		margin: 30px 0;
+	}
+
+	#platsmenu2
+	{
+		font-size:1.15em;
+	}
+	#menu3>.titremenu
+	{
+		font-size: 4em;
+	}
+	.txt
+	{
+		margin-right: 15px;
+	}
+	.bottom a 
+	{
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width:700px)
+{
+	/* Page index */
+
+	article
+	{
+		padding: 0;
+		margin-bottom: 70px;
+		width: 85%;
+	}
+
+	#logo
+	{
+		width: 60%;
 	}
 	.align
 	{
@@ -460,25 +498,27 @@ p
 		align-items: center;
 		margin:auto;
 	}
+	.titre
+	{
+		margin-top: 40px;
+	}
 	#menu
 	{
-		margin-top: 10%;
-		margin-bottom: 20%;
+		margin: 10% 0 15%;
 	}
 	.menu
 	{
 		width: 90%;
 		margin-bottom: 10%;
 	}
-
 	aside
 	{
 		margin-top: 0;
-		font-size: 170%;
+		font-size: 1em;
 	}
 	.foot
 	{
-		padding: 0;
+		padding: 2% 5%;
 	}
 
 	/*Pages Menu*/
@@ -486,58 +526,49 @@ p
 	{
 		--largeur:25%;
 		--hauteur:3px;
+		--bas:30px;
 	}
-	.txt
+	.titre
 	{
-		margin-right: 2%;
+		font-size: 1.5em;
 	}
 	.platsmenu
 	{
-		font-size: 150%;
-		padding-left: 5%;
-		padding-right: 5%;
+		font-size: 0.9em;
+		margin-bottom: 0;
+	}
+	.titremenu
+	{
+		margin-bottom: 20px;
+	}
+	.underline
+	{
+		font-size: 1.2em;
 	}
 	#platsmenu2
 	{
-		font-size: 120%;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding: 0 5%;
 	}
-	.entete2>.underline
+	#platsmenu2>.description
 	{
-		font-size: 120%;
-	}
-	.description
-	{
-		font-size: 110%;
+		font-size: 1.2em;
 	}
 	#menu3>.titremenu
 	{
-		font-size: 500%;
+		font-size: 2.5em;
+	}
+	#menu4 >.titremenu
+	{
+		font-size: 1.5em;
+	}
+	#menu4
+	{
+		font-size: 0.9em;
 	}
 	.bottom a
 	{
-		font-size: 170%;
-		margin-right: 5%;
-		margin-left: 5%;
-	}
-	.pagemenu>.bottom a
-	{
-		font-size: 200%;
-	}
-}
-@media screen and (max-width:700px)
-{
-	aside
-	{
-		font-size: 110%;
-	}
-	.bottom a
-	{
-		font-size: 110%;
-	}
-	.pagemenu>.bottom a
-	{
-		font-size: 250%;
+		margin: 0 5%;
+		padding: 3% 0;
+		font-size: 0.9em;
 	}
 }
