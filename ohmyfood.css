@@ -545,6 +545,11 @@ p
 	{
 		font-size: 1.2em;
 	}
+	#menu1>.titremenu p
+	{
+		font-size: 2em;
+		margin-bottom: 0;
+	}
 	#platsmenu2
 	{
 		padding: 0 5%;
