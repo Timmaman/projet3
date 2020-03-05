@@ -272,7 +272,7 @@ p
 	background:-webkit-linear-gradient(bottom right, #C67412, #A56799,#6E4CCC);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
-	background: linear-gradient(bottom right, #C67412, #A56799,#6E4CCC);
+	background: linear-gradient(to bottom right, #C67412, #A56799,#6E4CCC);
 }
 .entete2
 {
@@ -372,7 +372,7 @@ p
 	background:-webkit-linear-gradient(left,#153EDE , #0870F3,#359DF7);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
-	background: linear-gradient(left,#153EDE , #0870F3,#359DF7);
+	background: linear-gradient(to left,#153EDE , #0870F3,#359DF7);
 }
 
 .entete3_1:before,.entete3_1:after
@@ -413,7 +413,7 @@ p
 	background:-webkit-linear-gradient(left,#45993E , #C5F791);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
-	background: linear-gradient(left,#45993E , #C5F791);
+	background: linear-gradient(to left,#45993E , #C5F791);
 }
 
 .entete4:before,.entete4:after
@@ -425,12 +425,12 @@ p
 .entete4:before
 {
 	background: -webkit-linear-gradient(left,#45993E , #C5F791);
-	background: linear-gradient(left,#45993E , #C5F791);
+	background: linear-gradient(to left,#45993E , #C5F791);
 }
 .entete4:after
 {
   background: -webkit-linear-gradient(right,#45993E , #C5F791);
-  background: linear-gradient(left,#45993E , #C5F791);
+  background: linear-gradient(to left,#45993E , #C5F791);
 }
 .mentions
 {
