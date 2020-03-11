@@ -507,13 +507,7 @@ p
 	}
 
 	/*Pages Menu*/
-	:root
-	{
-		--largeur:25%;
-		--hauteur:3px;
-		--bas:30px;
-	}
-	.titre
+		.titre
 	{
 		font-size: 1.5em;
 	}
