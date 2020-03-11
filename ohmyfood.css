@@ -1,12 +1,5 @@
 /* Tous*/
-:root
-{
-	--couleur-texte:#F9CA47;
-	--couleur-fond:#579C87;
-	--largeur:30%;
-	--hauteur:5px;
-	--bas:100px;
-}
+
 body
 {
 	margin:0;
@@ -27,7 +20,7 @@ h2
 .top
 {
 	width: 100%;
-	background-color: var(--couleur-fond);
+	background-color: #579C87;
 	text-align:center;
 	padding: 30px 0;
 }
@@ -36,7 +29,7 @@ h2
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--couleur-fond);
+	background-color: #579C87;
 	display: flex;
 	justify-content: space-between;
 }
@@ -45,7 +38,7 @@ h2
 	margin: 2% 5%;
 	text-decoration: none;
 	font-size: 1em;
-	color: var(--couleur-texte);
+	color: #F9CA47;
 }
 .foot:hover
 {
@@ -73,8 +66,8 @@ aside
 	margin: auto;
 	display: flex;
 	align-items:flex-end;
-	background-color: var(--couleur-fond);
-	color: var(--couleur-texte);
+	background-color: #579C87;
+	color:#F9CA47;
 	border: none;
 	border-radius: 10px;
 	font-size: 1.5em;
@@ -217,7 +210,7 @@ p
 #menu1
 {
 	background-color:#FCDFDB;
-	padding-bottom: var(--bas);
+	padding-bottom: 100px;
 }
 #menu1>.titremenu p
 {
@@ -236,8 +229,8 @@ p
 }
 .entete1::before,.entete1::after
 {
-  height:var(--hauteur);
-  width: var(--largeur); 
+  height:5px;
+  width: 30%; 
   background: black;
   content:""
 }
@@ -262,7 +255,7 @@ p
 #menu2
 {
 	background-color:#FFF5FE;
-	padding-bottom: var(--bas);
+	padding-bottom: 100px;
 }
 
 #menu2 >.titremenu
@@ -283,7 +276,7 @@ p
 }
 .entete2:before,.entete2:after
 {
-  height:var(--hauteur);
+  height:5px;
   width: 23%; 
   content:""
 }
@@ -362,7 +355,7 @@ p
 #menu3
 {
 	background-color: #EDEFEF;
-	padding-bottom: var(--bas);
+	padding-bottom: 100px;
 }
 #menu3 >.titremenu
 {
@@ -375,8 +368,8 @@ p
 
 .entete3_1:before,.entete3_1:after
 {
-  height:var(--hauteur);
-  width: var(--largeur); 
+  height:5px;
+  width: 30%; 
   background: #153EDE;
   content:""
 }
@@ -384,16 +377,16 @@ p
 
 .entete3_2:before,.entete3_2:after
 {
-  height:var(--hauteur);
-  width: var(--largeur); 
+  height:5px;
+  width: 30%; 
   background: #0870F3;
   content:""
 }
 
 .entete3_3:before,.entete3_3:after
 {
-   height:var(--hauteur);
-  width: var(--largeur); 
+   height:5px;
+  width: 30%; 
   background: #359DF7;
   content:""
 }
@@ -402,7 +395,7 @@ p
 #menu4
 {
 	background-color: #FDFFFD;
-	padding-bottom: var(--bas);
+	padding-bottom: 100px;
 }
 #menu4 >.titremenu
 {
@@ -415,8 +408,8 @@ p
 
 .entete4:before,.entete4:after
 {
-  height:var(--hauteur);
-  width: var(--largeur);  
+  height:5px;
+  width:30%;  
   content:""
 }
 .entete4:before
@@ -433,12 +426,6 @@ p
 }
 @media screen and (max-width: 1030px)
 {
-	:root
-	{
-		--largeur:25%;
-		--hauteur:3px;
-		--bas:100px;
-	}
 	body
 	{
 		font-size: 16px;
